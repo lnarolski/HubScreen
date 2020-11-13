@@ -1,0 +1,178 @@
+body.departuresBoard {
+    text-align: center;
+    padding:0px 1px 0px 1px;
+    background-color:#000066;  
+    font-family:Verdana; 
+    color:white;
+}
+
+#infoDeparturesBoard
+{
+    width:100%;
+    border-collapse:collapse;
+    text-transform: uppercase;
+    color: White;
+    padding:	10px;
+}
+
+#infoDeparturesBoard tr td
+{
+    background-color:#000066;
+    text-transform: uppercase;
+    color:      #fff;
+    font-size: 20px;
+    font-weight:bold;
+    padding:	10px;
+}
+
+#infoDeparturesBoard tr td
+{
+    color:#ffffff;
+    height:10pt;
+}
+
+#stopName
+{
+    text-align: center;
+}
+
+#infoDeparturesBoard tr td#blank
+{
+    border:				5px;
+    height:				10pt;
+    width:				30px;
+}
+
+#headerDeparturesBoard 
+{   
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0px;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:15px;
+}
+
+#headerDeparturesBoard tr td
+{
+    border-collapse:	collapse;
+    padding:5px;
+    margin:5px;
+    color:#000066;
+    background-color:#D8D8EB;
+} 
+
+#headerDeparturesBoard tr
+{
+    width:0px;
+}
+
+#headerDeparturesBoard tr td.route
+{
+    width:50px;
+    text-align:right;
+    font-size:15px;
+    font-weight: bold;
+}
+
+#headerDeparturesBoard tr td.dir
+{
+    text-align:left;
+}
+
+#headerDeparturesBoard tr td.time
+{
+	text-align:right; 
+    width:220px;
+}
+
+#headerDeparturesBoard tr td#blank
+{
+    border:				10px;
+    height:				10pt;
+    width:				30px;
+    background-color:	white;
+}
+
+#timesDeparturesBoard
+{
+     border-bottom:  5pt solid #D8D8EB;
+     width:100%;
+     border-collapse:collapse;
+     border-spacing: 0px 0px;
+     caption-side:bottom;
+     empty-cells:hide;
+     table-layout:auto;
+     font-weight: bold;
+     color:white;
+}
+
+#timesDeparturesBoard tr td
+{
+    margin:0px 0px 0px 0px;
+    font-family:	Verdana;
+    font-weight:    normal;
+    font-weight:	bold;
+    font-size:11px;
+    padding:5px;
+}
+
+#headerDeparturesBoard tr
+{
+    width:26px;
+}
+
+#timesDeparturesBoard tr td.route
+{
+	width:50px;
+	text-align:right;
+	font-size:15px;
+	font-weight: bold;
+	border-left:2px solid #D8D8EB;
+	border-right:2px solid #D8D8EB;
+	border-bottom:2px solid #D8D8EB;
+	background-color:#000033;
+}
+
+#timesDeparturesBoard tr td.dir
+{
+    text-align:left; 
+	border-bottom:2px solid #D8D8EB;
+}
+
+#timesDeparturesBoard tr td.time
+{
+	text-align:right; 
+    width:110px;
+	border-left:2px solid #D8D8EB;
+	border-right:2px solid #D8D8EB;
+	border-bottom:2px solid #D8D8EB;
+}
+
+#scroller p {
+    border:  5pt solid #D8D8EB;
+    border-collapse:collapse;
+    border-spacing: 0px 0px;
+    caption-side:bottom;
+    empty-cells:hide;
+    table-layout:auto;
+    font-weight: bold;
+    color:white;
+    padding: 1em;
+    font-size:11px;
+}
+
+#news
+{
+    border:  5pt solid red;
+    margin-top: 1em;
+    border-collapse:collapse;
+    border-spacing: 0px 0px;
+    caption-side:bottom;
+    empty-cells:hide;
+    table-layout:auto;
+    font-weight: bold;
+    color:red;
+    padding: 1em;
+    font-size:11px;
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Control the screen of RPi with PIR sensor
+
+[Service]
+Type=simple
+ExecStart=/root/projects/PIRScreenControl/bin/ARM/Debug/PIRScreenControl.out
+
+[Install]
+WantedBy=default.target

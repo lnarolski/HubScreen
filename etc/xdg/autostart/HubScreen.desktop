@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=HubScreen
+Comment=Autostart of HubScreen
+NoDisplay=false
+Exec=surf -F localhost
+NotShowIn=GNOME;KDE;XFCE;

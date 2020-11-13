@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HubScreen</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/jqClock-lite.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/google-weather.css">
+		<link rel="stylesheet" href="css/jqClock.css">
+
+		<script>
+			function refreshMaps() {
+				var x = document.getElementById("googleMaps");
+				x.src = x.src;
+			}
+
+			function refreshWeather() {
+				var x = document.getElementById("googleWeather");
+				x.src = x.src;
+			}
+
+			function refreshDeparturesBoard() {
+				if (document.hidden)
+					return;
+
+				var x = document.getElementById("departuresBoard");
+				x.src = x.src;
+			}
+
+			function init() {
+				intMaps = self.setInterval(function () { refreshMaps() }, 300000);
+				intWeather = self.setInterval(function () { refreshWeather() }, 1800000);
+				intDeparturesBoard = self.setInterval(function () { refreshDeparturesBoard() }, 60000);
+
+				$("div#clock").clock({ "langSet": "pl" });
+			}
+
+			function weatherPlaceCorr() {
+				if (typeof loaded === 'undefined') {
+					var div = document.getElementById("google-weather-crop-id");
+					div.style.top = "0px";
+					div.style.left = "10px";
+				}
+
+				loaded = true;
+			}
+		</script>
+	</head>
+
+	<body onload="init()">
+		<table style="width:100%">
+			<tr>
+				<td style="width:50%">
+					<div class="google-weather-place">
+						<div class="google-weather-crop" id="google-weather-crop-id">
+							<iframe id="googleWeather" class="google-weather" height="450" onload="weatherPlaceCorr()"
+								src="https://www.google.com/search?igu=1&amp;q=pogoda+Gdańsk"></iframe>
+						</div>
+					</div>
+					<div style="top:450px;position:absolute;left:10px">
+						<iframe id="googleMaps"
+							src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d148545.97521002588!2d18.414238903777605!3d54.427088506321034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2zR2RhxYRzaw!3m2!1d54.3520252!2d18.6466384!4m5!1s0x46fda145071ed789%3A0xdee2f99989236636!2sGdynia!3m2!1d54.5188898!2d18.5305409!5e0!3m2!1spl!2spl!4v1605283021379!5m2!1spl!2spl"
+							width="660" height="305" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</td>
+				<td style="width:50%" rowspan="2">
+					<div>
+						<iframe id="departuresBoard" src="departuresBoard.html" scrolling="no" width="683"
+							height="757"></iframe>
+					</div>
+				</td>
+			</tr>
+			<tr></tr>
+		</table>
+		<div id="clock" style="top:625px;left:1067px;position:absolute"></div>
+	</body>
+</html>
