@@ -1,0 +1,4 @@
+/opt
+etc/systemd/system/zigbee2mqtt.service
+home/pi/.local/share/remmina/1609622671205.remmina
+*.o

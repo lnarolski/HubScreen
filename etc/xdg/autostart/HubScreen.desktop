@@ -3,5 +3,5 @@ Type=Application
 Name=HubScreen
 Comment=Autostart of HubScreen
 NoDisplay=false
-Exec=surf -F localhost
+Exec=remmina -c /home/pi/.local/share/remmina/1609622671205.remmina
 NotShowIn=GNOME;KDE;XFCE;

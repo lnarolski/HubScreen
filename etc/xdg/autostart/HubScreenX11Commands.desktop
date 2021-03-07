@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=HubScreenX11Commands
+Comment=Autostart of HubScreenX11Commands
+NoDisplay=true
+Exec=sudo /home/pi/projects/HubScreenX11Commands/bin/ARM/Debug/HubScreenX11Commands.out
+NotShowIn=GNOME;KDE;XFCE;
